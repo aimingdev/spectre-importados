@@ -87,7 +87,7 @@ const catalogo = [
     nome: "Vulcan Feu",
     marca: "French Avenue",
     categoria: "arabes",
-    genero: "unissex",
+    genero: "masculino",
     ocasiao: ["noite", "balada"],
     preco: 350.00,
     estoque: 1,
