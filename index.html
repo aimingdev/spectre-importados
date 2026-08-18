@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectre Importados | Catálogo Premium</title>
+  <meta name="description" content="Catálogo de perfumes árabes, de nicho e designer — Spectre Importados.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Galaxy Background Animation -->
+  <div class="galaxy-bg">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+  </div>
+
+  <header class="hero fade-in">
+    <div class="logo-container">
+        <!-- A sua logo -->
+        <img src="minha-logo.png" alt="Spectre Importados Logo" class="brand-logo">
+    </div>
+    <p class="tagline">O MELHOR DA PERFUMARIA</p>
+  </header>
+
+  <div class="controls fade-in" style="animation-delay: 0.2s;">
+    <div class="search-wrap">
+      <i class="fa-solid fa-search search-icon"></i>
+      <input type="text" id="busca" placeholder="Buscar por essência, marca ou nome...">
+    </div>
+    <nav class="tabs">
+      <button data-categoria="todos" class="active">Catálgo Completo</button>
+      <button data-categoria="arabes">Árabes</button>
+      <button data-categoria="nicho">Nicho</button>
+      <button data-categoria="designer"> Designers</button>
+    </nav>
+  </div>
+
+  <main>
+    <div id="grid-produtos" class="grid"></div>
+  </main>
+
+  <footer class="site-footer fade-in" style="animation-delay: 0.8s;">
+    <div class="footer-content">
+      <img src="minha-logo.png" alt="Spectre Importados" class="footer-logo">
+      <p>&copy; 2026 Spectre Importados. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Interativo -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+      
+      <div class="modal-left">
+         <div class="modal-img-wrap">
+            <img id="modal-img" src="" alt="Perfume">
+         </div>
+      </div>
+
+      <div class="modal-details">
+        <div class="modal-header-info">
+            <p class="marca" id="modal-marca"></p>
+            <h2 class="serif" id="modal-nome"></h2>
+        </div>
+        
+        <div class="glass-panel">
+            <p class="descricao" id="modal-descricao"></p>
+        </div>
+
+        <div class="piramide">
+          <p class="label"><i class="fa-solid fa-droplet"></i> Pirâmide Olfativa</p>
+          <div id="modal-piramide"></div>
+        </div>
+
+        <div class="modal-video-container" id="modal-video-wrap"></div>
+
+        <div class="modal-footer">
+          <div class="price-stock">
+            <div>
+              <p class="preco-label">Valor</p>
+              <p class="preco-valor" id="modal-preco"></p>
+            </div>
+            <div class="stock-info">
+              <p class="estoque-label">Status</p>
+              <p id="modal-estoque"></p>
+            </div>
+          </div>
+          <a href="#" id="modal-whatsapp" class="btn-whatsapp" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Solicitar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
