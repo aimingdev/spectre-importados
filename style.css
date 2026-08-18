@@ -1,5 +1,5 @@
 /* ============================================================
-   SPECTRE IMPORTADOS — Fix Modal Mobile Scroll
+   SPECTRE IMPORTADOS — CSS Completo com Correções Mobile e UI
    ============================================================ */
 
 :root {
@@ -137,7 +137,7 @@ header.hero {
 
 .logo-container {
   max-width: 300px;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.5rem;
 }
 
 .brand-logo {
@@ -201,6 +201,8 @@ header.hero p.tagline {
   transform: translateY(-50%);
   color: var(--accent);
   font-size: 1rem;
+  z-index: 5; /* Corrige a lupinha para nao ficar com blur */
+  pointer-events: none;
 }
 
 nav.tabs {
@@ -325,9 +327,7 @@ main { flex-grow: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 1r
 .card .estoque-ok { color: var(--ok); font-size: 0.65rem; font-weight: 500; display: flex; align-items: center; gap: 4px;}
 .card .estoque-out { color: var(--out); font-size: 0.65rem; font-weight: 500; display: flex; align-items: center; gap: 4px;}
 
-/* ============================================================
-   MODAL COMPLETO - CORRIGIDO PARA CELULAR E DESKTOP
-   ============================================================ */
+/* ---------- Modal Interativo ---------- */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -341,7 +341,7 @@ main { flex-grow: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 1r
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
-  overflow-y: auto; /* Permite rolagem no fundo caso a tela seja pequena */
+  overflow-y: auto;
 }
 
 .modal-overlay.open { 
@@ -491,18 +491,16 @@ main { flex-grow: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 1r
   transition: all 0.3s ease;
 }
 
-/* ------------------------------------------------------------
-   AJUSTES EXCLUSIVOS PARA DISPOSITIVOS MÓVEIS (CELULARES)
-   ------------------------------------------------------------ */
+/* ---------- Regras Exclusivas para Telas de Celular ---------- */
 @media (max-width: 768px) {
   .modal-overlay {
     padding: 1rem 0.5rem;
-    align-items: flex-start; /* Permite rolar do topo */
+    align-items: flex-start;
   }
 
   .modal-box {
-    flex-direction: column; /* Coloca a imagem ACIMA do texto */
-    max-height: none; /* Remove a limitação de altura */
+    flex-direction: column;
+    max-height: none;
     overflow: visible;
     margin: auto 0;
   }
@@ -510,20 +508,20 @@ main { flex-grow: 1; width: 100%; max-width: 1300px; margin: 0 auto; padding: 1r
   .modal-left {
     width: 100%;
     height: auto;
-    padding: 2.5rem 1rem 1.5rem; /* Espaço para o botão fechar */
-    position: relative; /* Transforma em bloco comum na página */
+    padding: 2.5rem 1rem 1.5rem;
+    position: relative;
   }
 
   .modal-img-wrap img {
-    max-height: 220px; /* Tamanho proporcional perfeito para telas de celular */
+    max-height: 220px;
     width: auto;
   }
 
   .modal-details {
     width: 100%;
-    max-height: none; /* Deixa o texto fluir e rolar junto com o modal */
+    max-height: none;
     padding: 1.5rem 1.2rem;
-    overflow-y: visible; /* Desativa a rolagem separada da caixa */
+    overflow-y: visible;
   }
 }
 
