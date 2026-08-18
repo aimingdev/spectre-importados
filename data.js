@@ -51,7 +51,7 @@ const catalogo = [
     nome: "Pacific Aura",
     marca: "Rayhaan",
     categoria: "arabes",
-    genero: "MASCULINO",
+    genero: "masculino",
     ocasiao: ["dia"],
     preco: 315.00,
     estoque: 1,
