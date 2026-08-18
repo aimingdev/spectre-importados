@@ -5,9 +5,11 @@
 const grid = document.getElementById('grid-produtos');
 const overlay = document.getElementById('modal-overlay');
 const searchInput = document.getElementById('busca');
+const selectOcasiao = document.getElementById('filtro-ocasiao');
 
 let categoriaAtual = 'todos';
 let termoBusca = '';
+let ocasiaoAtual = 'todas';
 
 const formatarPreco = (valor) =>
   valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -19,13 +21,32 @@ function produtosVisiveis() {
       termoBusca === '' ||
       p.nome.toLowerCase().includes(termoBusca) ||
       p.marca.toLowerCase().includes(termoBusca);
-    return bateCategoria && bateBusca;
+    const bateOcasiao = 
+      ocasiaoAtual === 'todas' || 
+      (p.ocasiao && p.ocasiao.includes(ocasiaoAtual));
+
+    return bateCategoria && bateBusca && bateOcasiao;
   });
 }
 
 function renderizar() {
-  const produtos = produtosVisiveis();
   grid.innerHTML = '';
+
+  // Intercepta a aba de encomendas antes de renderizar produtos
+  if (categoriaAtual === 'encomendas') {
+    grid.innerHTML = `
+      <div class="encomendas-state fade-in">
+        <div class="encomendas-icon"><i class="fa-solid fa-gem"></i></div>
+        <h2 class="serif">Serviço de Encomendas</h2>
+        <p>Procurando por uma fragrância específica? Caso tenha interesse em algum perfume exclusivo que não esteja disponível em nosso estoque atual, entre em contato. Buscamos a essência perfeita para você.</p>
+        <a href="https://wa.me/${NUMERO_WHATSAPP}?text=Olá! Gostaria de encomendar um perfume que não está no catálogo." target="_blank" rel="noopener" class="btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+        </a>
+      </div>`;
+    return;
+  }
+
+  const produtos = produtosVisiveis();
 
   if (produtos.length === 0) {
     grid.innerHTML = `
@@ -43,6 +64,12 @@ function renderizar() {
 
     let badges = '<div class="badge-wrapper">';
     if (isNiche) badges += '<span class="badge badge-nicho">Nicho</span>';
+    
+    // Novas Tags de Gênero
+    if (p.genero === 'masculino') badges += '<span class="badge badge-masculino">Masculino</span>';
+    else if (p.genero === 'feminino') badges += '<span class="badge badge-feminino">Feminino</span>';
+    else if (p.genero === 'unissex') badges += '<span class="badge badge-unissex">Unissex</span>';
+
     if (!disponivel) badges += '<span class="badge badge-esgotado">Esgotado</span>';
     badges += '</div>';
 
@@ -56,7 +83,6 @@ function renderizar() {
     card.tabIndex = 0;
     card.setAttribute('role', 'button');
     
-    // Imagem provisória preto e dourado caso a foto real não esteja salva
     const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\\n' + p.nome)}`;
 
     card.innerHTML = `
@@ -92,7 +118,6 @@ function abrirModal(id) {
   if (!p) return;
 
   const disponivel = p.estoque > 0;
-  // Imagem provisória preto e dourado
   const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\\n' + p.nome)}`;
   
   const imgEl = document.getElementById('modal-img');
@@ -169,6 +194,11 @@ document.querySelectorAll('.tabs button').forEach((btn) => {
 
 searchInput.addEventListener('input', (e) => {
   termoBusca = e.target.value.trim().toLowerCase();
+  renderizar();
+});
+
+selectOcasiao.addEventListener('change', (e) => {
+  ocasiaoAtual = e.target.value;
   renderizar();
 });
 
