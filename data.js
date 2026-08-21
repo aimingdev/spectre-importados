@@ -209,23 +209,5 @@ const catalogo = [
     },
     descricao: "Mantém o frescor picante original, mas ganha densidade e sofisticação com a adição do absoluto de baunilha oriental e notas ambaradas.",
     youtubeId: "mWO8zew6zRc"
-  },
-  {
-    id: 12,
-    nome: "The Most Wanted Parfum",
-    marca: "Azzaro",
-    categoria: "designer",
-    genero: "masculino",
-    ocasiao: ["noite", "balada"],
-    preco: 600.00,
-    estoque: 1,
-    imagem: "img/most-wanted.jpg",
-    notas: {
-      saida: "Gengibre vermelho",
-      coracao: "Madeiras incandescentes",
-      fundo: "Baunilha bourbon"
-    },
-    descricao: "Um perfume intenso e amadeirado. Traz um contraste marcante entre o frescor ardente do gengibre e uma base quente e reconfortante de madeiras e baunilha.",
-    youtubeId: "iO3MJsmHQII"
   }
 ];
