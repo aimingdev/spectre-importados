@@ -83,42 +83,6 @@ const catalogo = [
     youtubeId: "QsKLObYJ2y4"
   },
   {
-    id: 5,
-    nome: "Vulcan Feu",
-    marca: "French Avenue",
-    categoria: "arabes",
-    genero: "unissex",
-    ocasiao: ["noite", "balada"],
-    preco: 350.00,
-    estoque: 1,
-    imagem: "img/vulcan-feu.jpg",
-    notas: {
-      saida: "Manga, limão, gengibre",
-      coracao: "Pimenta rosa, jasmim, pralinê",
-      fundo: "Fava tonka, cedro, musgo"
-    },
-    descricao: "Um perfume frutado e ambarado, com abertura marcante de manga evoluindo para um fundo especiado. Desenvolvido como inspiração do exclusivo God of Fire, de Stéphane Humbert Lucas.",
-    youtubeId: "VXCxgVYz3dY"
-  },
-  {
-    id: 6,
-    nome: "Club de Nuit Intense Man",
-    marca: "Armaf",
-    categoria: "arabes",
-    genero: "masculino",
-    ocasiao: ["dia", "noite", "balada", "trabalho"],
-    preco: 260.00,
-    estoque: 1,
-    imagem: "img/club-de-nuit.jpg",
-    notas: {
-      saida: "Limão, abacaxi, bergamota, cassis, maçã",
-      coracao: "Bétula, jasmim, rosa",
-      fundo: "Âmbar cinzento, almíscar, patchouli"
-    },
-    descricao: "Conhecido por sua excelente fixação, apresenta uma abertura cítrica esfumaçada que evolui para notas amadeiradas. Amplamente reconhecido como a principal alternativa ao Creed Aventus.",
-    youtubeId: "h_nkgMc9TF0"
-  },
-  {
     id: 7,
     nome: "Liquid Brun",
     marca: "French Avenue",
@@ -182,7 +146,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["noite", "balada"],
     preco: 675.00,
-    estoque: 2,
+    estoque: 1,
     imagem: "img/le-male-elixir.jpg",
     notas: {
       saida: "Lavanda, menta",
@@ -209,5 +173,23 @@ const catalogo = [
     },
     descricao: "Mantém o frescor picante original, mas ganha densidade e sofisticação com a adição do absoluto de baunilha oriental e notas ambaradas.",
     youtubeId: "mWO8zew6zRc"
+  },
+  {
+    id: 12,
+    nome: "The Most Wanted Parfum",
+    marca: "Azzaro",
+    categoria: "designer",
+    genero: "masculino",
+    ocasiao: ["noite", "balada"],
+    preco: 600.00,
+    estoque: 1,
+    imagem: "img/most-wanted.jpg",
+    notas: {
+      saida: "Gengibre vermelho",
+      coracao: "Madeiras incandescentes",
+      fundo: "Baunilha bourbon"
+    },
+    descricao: "Um perfume intenso e amadeirado. Traz um contraste marcante entre o frescor ardente do gengibre e uma base quente e reconfortante de madeiras e baunilha.",
+    youtubeId: "iO3MJsmHQII"
   }
 ];
