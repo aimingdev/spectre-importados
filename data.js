@@ -176,7 +176,7 @@ const catalogo = [
   },
   {
     id: 12,
-    nome: "The Most Wanted Parfum",
+    nome: "The Most Wanted Intense",
     marca: "Azzaro",
     categoria: "designer",
     genero: "masculino",
