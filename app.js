@@ -48,6 +48,9 @@ function renderizar() {
 
   const produtos = produtosVisiveis();
 
+  // ORDENAÇÃO: Coloca os produtos com estoque > 0 primeiro
+  produtos.sort((a, b) => (b.estoque > 0 ? 1 : 0) - (a.estoque > 0 ? 1 : 0));
+
   if (produtos.length === 0) {
     grid.innerHTML = `
       <div class="empty-state fade-in">
@@ -83,11 +86,14 @@ function renderizar() {
     card.tabIndex = 0;
     card.setAttribute('role', 'button');
     
-    const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\\n' + p.nome)}`;
+    const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\n' + p.nome)}`;
+    
+    // Aplica o filtro de preto e branco caso não esteja disponível
+    const estiloImagem = disponivel ? '' : 'filter: grayscale(100%); opacity: 0.7;';
 
     card.innerHTML = `
       <div class="img-wrap">
-        <img src="${p.imagem}" alt="${p.nome}" loading="lazy" onerror="this.onerror=null; this.src='${fallbackImg}';">
+        <img src="${p.imagem}" alt="${p.nome}" loading="lazy" style="${estiloImagem}" onerror="this.onerror=null; this.src='${fallbackImg}';">
         ${badges}
       </div>
       <div class="info">
@@ -118,7 +124,7 @@ function abrirModal(id) {
   if (!p) return;
 
   const disponivel = p.estoque > 0;
-  const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\\n' + p.nome)}`;
+  const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\n' + p.nome)}`;
   
   const imgEl = document.getElementById('modal-img');
   imgEl.src = p.imagem;
@@ -126,6 +132,10 @@ function abrirModal(id) {
     this.onerror = null;
     this.src = fallbackImg;
   };
+  
+  // Aplica o preto e branco na imagem do modal também se estiver esgotado
+  imgEl.style.filter = disponivel ? 'none' : 'grayscale(100%)';
+  imgEl.style.opacity = disponivel ? '1' : '0.6';
 
   document.getElementById('modal-marca').textContent = p.marca;
   document.getElementById('modal-nome').textContent = p.nome;
@@ -160,15 +170,30 @@ function abrirModal(id) {
   }
 
   const btn = document.getElementById('modal-whatsapp');
+  
+  // Limpa ações anteriores do botão para não conflitar
+  btn.onclick = null; 
+
   if (disponivel) {
     const msg = encodeURIComponent(`Olá! Tenho interesse no perfume ${p.nome} (${p.marca}).`);
     btn.href = `https://wa.me/${NUMERO_WHATSAPP}?text=${msg}`;
     btn.innerHTML = '<i class="fa-brands fa-whatsapp"></i> Finalizar Compra';
     btn.classList.remove('disabled');
+    btn.setAttribute('target', '_blank');
   } else {
+    // Nova lógica para produtos esgotados
     btn.href = '#';
-    btn.innerHTML = '<i class="fa-solid fa-bell"></i> Avise-me quando chegar';
-    btn.classList.add('disabled');
+    btn.innerHTML = '<i class="fa-solid fa-box-open"></i> Encomendar';
+    btn.classList.remove('disabled'); 
+    btn.removeAttribute('target');
+    
+    // Ação: Fecha o modal, muda para a aba de encomendas e sobe a tela
+    btn.onclick = (e) => {
+      e.preventDefault();
+      fecharModal();
+      document.querySelector('button[data-categoria="encomendas"]').click();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
   }
 
   overlay.classList.add('open');
