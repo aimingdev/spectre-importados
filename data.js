@@ -34,7 +34,7 @@ const catalogo = [
     genero: "unissex",
     ocasiao: ["noite", "trabalho"],
     preco: 1500.00,
-    estoque: 1,
+    estoque: 0, // Marcado como esgotado
     imagem: "img/naxos.jpg",
     notas: {
       saida: "Lavanda, bergamota, limão",
@@ -54,7 +54,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia"],
     preco: 315.00,
-    estoque: 1,
+    estoque: 0, // Marcado como esgotado
     imagem: "img/pacific-aura.jpg",
     notas: {
       saida: "Tangerina, hortelã, citron, bergamota",
@@ -81,6 +81,42 @@ const catalogo = [
     },
     descricao: "Uma fragrância sofisticada que combina notas atalcadas de íris com a sobriedade do couro e das madeiras. Inspirada no aclamado perfil olfativo do Dior Homme Intense.",
     youtubeId: "QsKLObYJ2y4"
+  },
+  {
+    id: 5,
+    nome: "Vulcan Feu",
+    marca: "French Avenue",
+    categoria: "arabes",
+    genero: "unissex",
+    ocasiao: ["noite", "balada"],
+    preco: 350.00,
+    estoque: 0, // Marcado como esgotado
+    imagem: "img/vulcan-feu.jpg",
+    notas: {
+      saida: "Manga, limão, gengibre",
+      coracao: "Pimenta rosa, jasmim, pralinê",
+      fundo: "Fava tonka, cedro, musgo"
+    },
+    descricao: "Um perfume frutado e ambarado, com abertura marcante de manga evoluindo para um fundo especiado. Desenvolvido como inspiração do exclusivo God of Fire, de Stéphane Humbert Lucas.",
+    youtubeId: "VXCxgVYz3dY"
+  },
+  {
+    id: 6,
+    nome: "Club de Nuit Intense Man",
+    marca: "Armaf",
+    categoria: "arabes",
+    genero: "masculino",
+    ocasiao: ["dia", "noite", "balada", "trabalho"],
+    preco: 260.00,
+    estoque: 0, // Marcado como esgotado
+    imagem: "img/club-de-nuit.jpg",
+    notas: {
+      saida: "Limão, abacaxi, bergamota, cassis, maçã",
+      coracao: "Bétula, jasmim, rosa",
+      fundo: "Âmbar cinzento, almíscar, patchouli"
+    },
+    descricao: "Conhecido por sua excelente fixação, apresenta uma abertura cítrica esfumaçada que evolui para notas amadeiradas. Amplamente reconhecido como a principal alternativa ao Creed Aventus.",
+    youtubeId: "h_nkgMc9TF0"
   },
   {
     id: 7,
@@ -176,7 +212,7 @@ const catalogo = [
   },
   {
     id: 12,
-    nome: "The Most Wanted Intense",
+    nome: "The Most Wanted Parfum",
     marca: "Azzaro",
     categoria: "designer",
     genero: "masculino",
