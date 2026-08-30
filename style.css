@@ -608,3 +608,17 @@ footer.site-footer p { color: var(--ink-dim); font-size: 0.75rem; letter-spacing
   border: 1px solid #b3b3b3; 
   color: #f0f0f0; 
 }
+
+/* ============================================================
+   EFEITO DE ZOOM NA IMAGEM DOS CARDS (HOVER)
+   ============================================================ */
+
+/* 1. Adiciona a transição suave na imagem */
+.card .img-wrap img {
+  transition: transform 0.4s ease; 
+}
+
+/* 2. Aplica o zoom quando o mouse passar por cima do card */
+.card:hover .img-wrap img {
+  transform: scale(1.12); /* Aumenta a imagem em 12%. Pode ajustar esse valor se quiser mais ou menos zoom */
+}
