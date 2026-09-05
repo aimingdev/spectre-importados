@@ -60,7 +60,7 @@ const catalogo = [
       fundo: "Almíscar, cedro, âmbar, patchouli, raiz de orris"
     },
     descricao: "Uma fragrância cítrico-amadeirada sofisticada assinada por Christian Provenzano. Abre com uma explosão vibrante de toranja e bergamota, evolui para um coração picante de gengibre e finaliza em uma base quente de âmbar, cedro e patchouli.",
-    youtubeId: "lvj8isSwEF0&t"
+    youtubeId: "lvj8isSwEF0"
   },
 
   // ===== ÁRABES =====
