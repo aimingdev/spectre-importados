@@ -60,7 +60,7 @@ const catalogo = [
       fundo: "Almíscar, cedro, âmbar, patchouli, raiz de orris"
     },
     descricao: "Uma fragrância cítrico-amadeirada sofisticada assinada por Christian Provenzano. Abre com uma explosão vibrante de toranja e bergamota, evolui para um coração picante de gengibre e finaliza em uma base quente de âmbar, cedro e patchouli.",
-    youtubeId: "X70_4IEmEiA"
+    youtubeId: "lvj8isSwEF0&t"
   },
 
   // ===== ÁRABES =====
@@ -188,7 +188,7 @@ const catalogo = [
       fundo: "Cedro, resina de abeto"
     },
     descricao: "Um perfume âmbar-especiado intenso e envolvente, com abertura de açafrão e jasmim evoluindo para uma base rica de amberwood e âmbar cinzento. Desenvolvido como alternativa acessível ao exclusivo Baccarat Rouge 540, da Maison Francis Kurkdjian.",
-    youtubeId: "Uy64wYWYdy4"
+    youtubeId: "vcVALMo-fx0"
   },
   {
     id: 15,
@@ -206,7 +206,7 @@ const catalogo = [
       fundo: "Baunilha, almíscar, sândalo"
     },
     descricao: "Uma fragrância doce e cremosa da família âmbar baunilhada, com abertura floral e cítrica que evolui para um coração de frutas tropicais e acorde gourmand, finalizando em uma base calorosa de baunilha e almíscar.",
-    youtubeId: "8iH0yLu5QAY"
+    youtubeId: "6U2-EQGoL9M"
   },
   {
     id: 16,
@@ -224,7 +224,7 @@ const catalogo = [
       fundo: "Musgo de carvalho, almíscar, âmbar cinzento"
     },
     descricao: "Uma fragrância chipre frutada vibrante, com abertura suculenta de abacaxi e bergamota evoluindo para um coração ambarado e levemente defumado de bétula. Desenvolvido como uma alternativa acessível ao exclusivo Aventus Absolu, da Creed.",
-    youtubeId: "EEOipwy83NM"
+    youtubeId: "u2WQomK7OiQ"
   },
 
   // ===== DESIGNER =====
