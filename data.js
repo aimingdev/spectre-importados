@@ -44,6 +44,24 @@ const catalogo = [
     descricao: "Uma composição rica que equilibra o frescor cítrico inicial com notas profundas e reconfortantes de mel, tabaco e baunilha. Um perfume encorpado e extremamente elegante.",
     youtubeId: "BM8vLgFLQB4"
   },
+  {
+    id: 13,
+    nome: "Vibrato",
+    marca: "Sospiro",
+    categoria: "nicho",
+    genero: "unissex",
+    ocasiao: ["dia", "noite"],
+    preco: 1600.00,
+    estoque: 1,
+    imagem: "img/vibrato.jpg",
+    notas: {
+      saida: "Toranja, bergamota, jasmim, magnólia",
+      coracao: "Gengibre, notas herbais, notas atalcadas",
+      fundo: "Almíscar, cedro, âmbar, patchouli, raiz de orris"
+    },
+    descricao: "Uma fragrância cítrico-amadeirada sofisticada assinada por Christian Provenzano. Abre com uma explosão vibrante de toranja e bergamota, evolui para um coração picante de gengibre e finaliza em uma base quente de âmbar, cedro e patchouli.",
+    youtubeId: "X70_4IEmEiA"
+  },
 
   // ===== ÁRABES =====
   {
@@ -90,7 +108,7 @@ const catalogo = [
     genero: "unissex",
     ocasiao: ["noite", "balada"],
     preco: 350.00,
-    estoque: 0, // Marcado como esgotado
+    estoque: 2,
     imagem: "img/vulcan-feu.jpg",
     notas: {
       saida: "Manga, limão, gengibre",
@@ -108,7 +126,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "noite", "balada", "trabalho"],
     preco: 260.00,
-    estoque: 0, // Marcado como esgotado
+    estoque: 1,
     imagem: "img/club-de-nuit.jpg",
     notas: {
       saida: "Limão, abacaxi, bergamota, cassis, maçã",
@@ -153,6 +171,60 @@ const catalogo = [
     },
     descricao: "Uma variação do sucesso Khamrah, agora com o contraste do café torrado equilibrando as notas doces de pralinê e canela. Fragrância na mesma linha olfativa de Angels' Share, de By Kilian.",
     youtubeId: "Nr_SJKWfbs0"
+  },
+  {
+    id: 14,
+    nome: "Amber Rouge",
+    marca: "Orientica",
+    categoria: "arabes",
+    genero: "unissex",
+    ocasiao: ["noite", "balada"],
+    preco: 450.00,
+    estoque: 1,
+    imagem: "img/amber-rouge.jpg",
+    notas: {
+      saida: "Açafrão, jasmim",
+      coracao: "Amberwood, âmbar cinzento",
+      fundo: "Cedro, resina de abeto"
+    },
+    descricao: "Um perfume âmbar-especiado intenso e envolvente, com abertura de açafrão e jasmim evoluindo para uma base rica de amberwood e âmbar cinzento. Desenvolvido como alternativa acessível ao exclusivo Baccarat Rouge 540, da Maison Francis Kurkdjian.",
+    youtubeId: "Uy64wYWYdy4"
+  },
+  {
+    id: 15,
+    nome: "Yara",
+    marca: "Lattafa",
+    categoria: "arabes",
+    genero: "feminino",
+    ocasiao: ["dia", "noite"],
+    preco: 250.00,
+    estoque: 1,
+    imagem: "img/yara.jpg",
+    notas: {
+      saida: "Orquídea, heliotrópio, tangerina",
+      coracao: "Acorde gourmand, frutas tropicais",
+      fundo: "Baunilha, almíscar, sândalo"
+    },
+    descricao: "Uma fragrância doce e cremosa da família âmbar baunilhada, com abertura floral e cítrica que evolui para um coração de frutas tropicais e acorde gourmand, finalizando em uma base calorosa de baunilha e almíscar.",
+    youtubeId: "8iH0yLu5QAY"
+  },
+  {
+    id: 16,
+    nome: "Supremacy Collector's Edition",
+    marca: "Afnan",
+    categoria: "arabes",
+    genero: "masculino",
+    ocasiao: ["dia", "noite", "trabalho"],
+    preco: 450.00,
+    estoque: 1,
+    imagem: "img/supremacy-collectors-edition.jpg",
+    notas: {
+      saida: "Abacaxi, bergamota, maçã, flores brancas",
+      coracao: "Flor de laranjeira, bétula, âmbar",
+      fundo: "Musgo de carvalho, almíscar, âmbar cinzento"
+    },
+    descricao: "Uma fragrância chipre frutada vibrante, com abertura suculenta de abacaxi e bergamota evoluindo para um coração ambarado e levemente defumado de bétula. Desenvolvido como uma alternativa acessível ao exclusivo Aventus Absolu, da Creed.",
+    youtubeId: "EEOipwy83NM"
   },
 
   // ===== DESIGNER =====
