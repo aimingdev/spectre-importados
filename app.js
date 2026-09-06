@@ -89,7 +89,7 @@ function renderizar() {
     const fallbackImg = `https://placehold.co/400x500/0a0a0a/d4af37?text=${encodeURIComponent(p.marca + '\n' + p.nome)}`;
     
     // Aplica o filtro de preto e branco caso não esteja disponível
-    const estiloImagem = disponivel ? '' : 'filter: grayscale(100%); opacity: 0.7;';
+    const estiloImagem = disponivel ? '' : 'filter: grayscale(85%); opacity: 0.8;';
 
     card.innerHTML = `
       <div class="img-wrap">
