@@ -13,7 +13,7 @@ const catalogo = [
     nome: "Hacivat Extrait de Parfum",
     marca: "Nishane",
     categoria: "nicho",
-    genero: "unissex",
+    genero: "masculino",
     ocasiao: ["dia", "trabalho"],
     preco: 1400.00,
     estoque: 1,
