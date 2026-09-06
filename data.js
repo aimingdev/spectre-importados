@@ -198,7 +198,7 @@ const catalogo = [
     genero: "feminino",
     ocasiao: ["dia", "noite"],
     preco: 250.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/yara.jpg",
     notas: {
       saida: "Orquídea, heliotrópio, tangerina",
