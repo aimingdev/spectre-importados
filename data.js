@@ -180,7 +180,7 @@ const catalogo = [
     genero: "unissex",
     ocasiao: ["noite", "balada"],
     preco: 450.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/amber-rouge.jpg",
     notas: {
       saida: "Açafrão, jasmim",
