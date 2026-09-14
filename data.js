@@ -272,7 +272,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "noite", "trabalho", "balada"],
     preco: 750.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/sauvage.jpg",
     notas: {
       saida: "Bergamota da Calábria",
