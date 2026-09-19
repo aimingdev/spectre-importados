@@ -16,7 +16,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "trabalho"],
     preco: 1400.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/hacivat.jpg",
     notas: {
       saida: "Bergamota, abacaxi, toranja",
@@ -126,7 +126,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "noite", "balada", "trabalho"],
     preco: 260.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/club-de-nuit.jpg",
     notas: {
       saida: "Limão, abacaxi, bergamota, cassis, maçã",
@@ -216,7 +216,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "noite", "trabalho"],
     preco: 450.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/supremacy-collectors-edition.jpg",
     notas: {
       saida: "Abacaxi, bergamota, maçã, flores brancas",
@@ -290,7 +290,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["noite", "balada"],
     preco: 600.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/most-wanted.jpg",
     notas: {
       saida: "Gengibre vermelho",
