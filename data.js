@@ -13,7 +13,7 @@ const catalogo = [
     nome: "Hacivat Extrait de Parfum",
     marca: "Nishane",
     categoria: "nicho",
-    genero: "masculino",
+    genero: "unissex",
     ocasiao: ["dia", "trabalho"],
     preco: 1400.00,
     estoque: 0,
@@ -45,23 +45,42 @@ const catalogo = [
     youtubeId: "BM8vLgFLQB4"
   },
   {
-    id: 13,
-    nome: "Vibrato",
-    marca: "Sospiro",
+    id: 17,
+    nome: "Torino21",
+    marca: "Xerjoff",
     categoria: "nicho",
     genero: "unissex",
-    ocasiao: ["dia", "noite"],
-    preco: 1600.00,
+    ocasiao: ["dia", "trabalho"],
+    preco: 1500.00,
     estoque: 1,
-    imagem: "img/vibrato.jpg",
+    imagem: "img/torino21.jpg",
     notas: {
-      saida: "Toranja, bergamota, jasmim, magnólia",
-      coracao: "Gengibre, notas herbais, notas atalcadas",
-      fundo: "Almíscar, cedro, âmbar, patchouli, raiz de orris"
+      saida: "Menta, limão, manjericão, tomilho",
+      coracao: "Groselha preta, lavanda, alecrim, jasmim",
+      fundo: "Almíscar, verbena"
     },
-    descricao: "Uma fragrância cítrico-amadeirada sofisticada assinada por Christian Provenzano. Abre com uma explosão vibrante de toranja e bergamota, evolui para um coração picante de gengibre e finaliza em uma base quente de âmbar, cedro e patchouli.",
-    youtubeId: "lvj8isSwEF0"
+    descricao: "Uma explosão verde e revigorante de menta e cítricos italianos. Um dos perfumes mais refrescantes, energéticos e refinados da prestigiada casa de nicho Xerjoff.",
+    youtubeId: ""
   },
+
+  {
+  id: 20,
+  nome: "Vibrato",
+  marca: "Sospiro",
+  categoria: "nicho",
+  genero: "unissex",
+  ocasiao: ["dia", "trabalho", "noite"],
+  preco: 1600.00,         
+  estoque: 1,
+  imagem: "img/vibrato.jpg",
+  notas: {
+    saida: "Toranja, bergamota, jasmim, magnólia",
+    coracao: "Gengibre, notas herbais, notas atalcadas",
+    fundo: "Almíscar, cedro, âmbar, patchouli, raiz de íris"
+  },
+  descricao: "Uma fragrância cítrica e elegante que abre com a frescura efervescente da toranja e da bergamota, suavizada por jasmim e magnólia. O coração traz o toque picante do gengibre e notas herbais/atalcadas, evoluindo para uma base quente e sofisticada de cedro, âmbar, patchouli e íris. Conhecido pela projeção limpa e pelo perfil versátil de alta qualidade.",
+  youtubeId: ""
+},
 
   // ===== ÁRABES =====
   {
@@ -108,7 +127,7 @@ const catalogo = [
     genero: "unissex",
     ocasiao: ["noite", "balada"],
     preco: 350.00,
-    estoque: 2,
+    estoque: 1, // Disponível novamente
     imagem: "img/vulcan-feu.jpg",
     notas: {
       saida: "Manga, limão, gengibre",
@@ -126,7 +145,7 @@ const catalogo = [
     genero: "masculino",
     ocasiao: ["dia", "noite", "balada", "trabalho"],
     preco: 260.00,
-    estoque: 0,
+    estoque: 0, // Disponível novamente
     imagem: "img/club-de-nuit.jpg",
     notas: {
       saida: "Limão, abacaxi, bergamota, cassis, maçã",
@@ -143,7 +162,7 @@ const catalogo = [
     categoria: "arabes",
     genero: "masculino",
     ocasiao: ["noite", "balada"],
-    preco: 315.00,
+    preco: 290.00,
     estoque: 1,
     imagem: "img/liquid-brun.jpg",
     notas: {
@@ -173,58 +192,94 @@ const catalogo = [
     youtubeId: "Nr_SJKWfbs0"
   },
   {
+    id: 13,
+    nome: "Italia",
+    marca: "Rayhaan",
+    categoria: "arabes",
+    genero: "masculino",
+    ocasiao: ["noite", "trabalho"],
+    preco: 315.00,
+    estoque: 1,
+    imagem: "img/rayhaan-italia.jpg",
+    notas: {
+      saida: "Lavanda, limão, bergamota",
+      coracao: "Mel, canela, cashmeran, jasmim",
+      fundo: "Baunilha, folhas de tabaco, fava tonka"
+    },
+    descricao: "Uma fragrância acolhedora e refinada inspirada no perfil do Xerjoff Naxos. Destaca-se pelo contraste vibrante da lavanda cítrica com o dulçor rico do mel, canela e tabaco.",
+    youtubeId: ""
+  },
+  {
     id: 14,
-    nome: "Amber Rouge",
-    marca: "Orientica",
+    nome: "Maktub Gold",
+    marca: "Bidaya Parfums",
     categoria: "arabes",
     genero: "unissex",
     ocasiao: ["noite", "balada"],
-    preco: 450.00,
-    estoque: 0,
-    imagem: "img/amber-rouge.jpg",
+    preco: 315.00,
+    estoque: 1,
+    imagem: "img/maktub-gold.jpg",
     notas: {
-      saida: "Açafrão, jasmim",
-      coracao: "Amberwood, âmbar cinzento",
-      fundo: "Cedro, resina de abeto"
+      saida: "Laranja brasileira, bergamota, limão, gengibre",
+      coracao: "Pera suculenta, canela, cardamomo, cravo",
+      fundo: "Baunilha de Madagascar, âmbar, almíscar, notas amadeiradas"
     },
-    descricao: "Um perfume âmbar-especiado intenso e envolvente, com abertura de açafrão e jasmim evoluindo para uma base rica de amberwood e âmbar cinzento. Desenvolvido como alternativa acessível ao exclusivo Baccarat Rouge 540, da Maison Francis Kurkdjian.",
-    youtubeId: "vcVALMo-fx0"
+    descricao: "Urbano, sensual e envolvente. Abre com uma explosão cítrica e picante de gengibre, evoluindo para um coração de pera e especiarias quentes sobre uma base marcante de baunilha.",
+    youtubeId: ""
   },
   {
     id: 15,
-    nome: "Yara",
-    marca: "Lattafa",
+    nome: "Hawas Black",
+    marca: "Rasasi",
     categoria: "arabes",
-    genero: "feminino",
-    ocasiao: ["dia", "noite"],
-    preco: 250.00,
-    estoque: 0,
-    imagem: "img/yara.jpg",
+    genero: "masculino",
+    ocasiao: ["dia", "noite", "trabalho", "balada"],
+    preco: 350.00,
+    estoque: 1,
+    imagem: "img/hawas-black.jpg",
     notas: {
-      saida: "Orquídea, heliotrópio, tangerina",
-      coracao: "Acorde gourmand, frutas tropicais",
-      fundo: "Baunilha, almíscar, sândalo"
+      saida: "Abacaxi, bergamota, toranja",
+      coracao: "Cedro, patchouli, jasmim",
+      fundo: "Musgo de carvalho, notas amadeiradas, âmbar"
     },
-    descricao: "Uma fragrância doce e cremosa da família âmbar baunilhada, com abertura floral e cítrica que evolui para um coração de frutas tropicais e acorde gourmand, finalizando em uma base calorosa de baunilha e almíscar.",
-    youtubeId: "6U2-EQGoL9M"
+    descricao: "Interpretação intensa e moderna da linha Hawas. Entrega um topo frutado marcante de abacaxi e cítricos que se fixa sobre uma base amadeirada, musgosa e ambarada de alta projeção.",
+    youtubeId: ""
   },
   {
     id: 16,
-    nome: "Supremacy Collector's Edition",
-    marca: "Afnan",
+    nome: "Ayat",
+    marca: "Bidaya Parfums",
     categoria: "arabes",
-    genero: "masculino",
-    ocasiao: ["dia", "noite", "trabalho"],
-    preco: 450.00,
-    estoque: 0,
-    imagem: "img/supremacy-collectors-edition.jpg",
+    genero: "unissex",
+    ocasiao: ["noite", "balada"],
+    preco: 315.00,
+    estoque: 1,
+    imagem: "img/bidaya-ayat.jpg",
     notas: {
-      saida: "Abacaxi, bergamota, maçã, flores brancas",
-      coracao: "Flor de laranjeira, bétula, âmbar",
-      fundo: "Musgo de carvalho, almíscar, âmbar cinzento"
+      saida: "Hibisco, hortelã-pimenta, groselha preta",
+      coracao: "Rosa damascena, baunilha, canela, ambreta",
+      fundo: "Âmbar, couro encorpado"
     },
-    descricao: "Uma fragrância chipre frutada vibrante, com abertura suculenta de abacaxi e bergamota evoluindo para um coração ambarado e levemente defumado de bétula. Desenvolvido como uma alternativa acessível ao exclusivo Aventus Absolu, da Creed.",
-    youtubeId: "u2WQomK7OiQ"
+    descricao: "Perfume floral oriental opulento e misterioso, inspirado no perfil olfativo de Hibiscus Mahajád. Mescla o frescor frutado e florais intensos a um fundo denso de couro e baunilha.",
+    youtubeId: ""
+  },
+  {
+    id: 19,
+    nome: "Rose Éclat",
+    marca: "Orientica",
+    categoria: "arabes",
+    genero: "feminino",
+    ocasiao: ["dia", "noite", "trabalho"],
+    preco: 485.00,
+    estoque: 1,
+    imagem: "img/rose-eclat.jpg",
+    notas: {
+      saida: "Pêssego, bergamota, toranja, noz-moscada",
+      coracao: "Rosa aveludada, peônia rosa, violeta",
+      fundo: "Âmbar, almíscar, benjoim, vetiver"
+    },
+    descricao: "Uma fragrância feminina extremamente elegante e sofisticada. Traz um buquê radiante de rosas aveludadas e peônias envolto em uma aura suave de âmbar e almíscar.",
+    youtubeId: ""
   },
 
   // ===== DESIGNER =====
@@ -236,7 +291,7 @@ const catalogo = [
     genero: "feminino",
     ocasiao: ["noite", "balada"],
     preco: 900.00,
-    estoque: 1,
+    estoque: 0,
     imagem: "img/libre.jpg",
     notas: {
       saida: "Bergamota, gengibre, açafrão",
@@ -253,8 +308,8 @@ const catalogo = [
     categoria: "designer",
     genero: "masculino",
     ocasiao: ["noite", "balada"],
-    preco: 675.00,
-    estoque: 1,
+    preco: 645.00,
+    estoque: 2,
     imagem: "img/le-male-elixir.jpg",
     notas: {
       saida: "Lavanda, menta",
@@ -299,5 +354,23 @@ const catalogo = [
     },
     descricao: "Um perfume intenso e amadeirado. Traz um contraste marcante entre o frescor ardente do gengibre e uma base quente e reconfortante de madeiras e baunilha.",
     youtubeId: "iO3MJsmHQII"
+  },
+    {
+    id: 18,
+    nome: "Man in Black Parfum",
+    marca: "Bvlgari",
+    categoria: "designer",
+    genero: "masculino",
+    ocasiao: ["noite", "trabalho", "balada"],
+    preco: 650.00,
+    estoque: 1,
+    imagem: "img/man-in-black.jpg",
+    notas: {
+      saida: "Especiarias quentes, elemi",
+      coracao: "Íris atalcado, tuberosa",
+      fundo: "Madeiras escuras, benjoim de Sião"
+    },
+    descricao: "Uma interpretação ainda mais intensa, concentrada e sofisticada. Combina o frescor especiado do elemi e o requinte da íris com uma base profunda e amadeirada de benjoim de Sião.",
+    youtubeId: ""
   }
 ];
