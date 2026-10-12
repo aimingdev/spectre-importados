@@ -362,7 +362,7 @@ const catalogo = [
     categoria: "designer",
     genero: "masculino",
     ocasiao: ["noite", "trabalho", "balada"],
-    preco: 650.00,
+    preco: 675.00,
     estoque: 1,
     imagem: "img/man-in-black.jpg",
     notas: {
