@@ -263,44 +263,10 @@ const catalogo = [
     descricao: "Perfume floral oriental opulento e misterioso, inspirado no perfil olfativo de Hibiscus Mahajád. Mescla o frescor frutado e florais intensos a um fundo denso de couro e baunilha.",
     youtubeId: ""
   },
-  {
-    id: 19,
-    nome: "Rose Éclat",
-    marca: "Orientica",
-    categoria: "arabes",
-    genero: "feminino",
-    ocasiao: ["dia", "noite", "trabalho"],
-    preco: 485.00,
-    estoque: 1,
-    imagem: "img/rose-eclat.jpg",
-    notas: {
-      saida: "Pêssego, bergamota, toranja, noz-moscada",
-      coracao: "Rosa aveludada, peônia rosa, violeta",
-      fundo: "Âmbar, almíscar, benjoim, vetiver"
-    },
-    descricao: "Uma fragrância feminina extremamente elegante e sofisticada. Traz um buquê radiante de rosas aveludadas e peônias envolto em uma aura suave de âmbar e almíscar.",
-    youtubeId: ""
-  },
+  
 
   // ===== DESIGNER =====
-  {
-    id: 9,
-    nome: "Libre Le Parfum",
-    marca: "YSL",
-    categoria: "designer",
-    genero: "feminino",
-    ocasiao: ["noite", "balada"],
-    preco: 900.00,
-    estoque: 0,
-    imagem: "img/libre.jpg",
-    notas: {
-      saida: "Bergamota, gengibre, açafrão",
-      coracao: "Lavanda, flor de laranjeira",
-      fundo: "Vetiver, fava tonka, mel"
-    },
-    descricao: "A interpretação mais intensa da linha Libre. Combina a lavanda francesa e a flor de laranjeira com um acorde quente, picante e ambarado de açafrão e mel.",
-    youtubeId: "Rbbk1X_ZEeo"
-  },
+  
   {
     id: 10,
     nome: "Le Male Elixir",
